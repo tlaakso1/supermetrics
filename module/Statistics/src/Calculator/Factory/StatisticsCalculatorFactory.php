@@ -8,7 +8,6 @@ use Statistics\Calculator\AveragePostLength;
 use Statistics\Calculator\CalculatorComposite;
 use Statistics\Calculator\CalculatorInterface;
 use Statistics\Calculator\MaxPostLength;
-use Statistics\Calculator\NoopCalculator;
 use Statistics\Calculator\TotalPostsPerWeek;
 use Statistics\Dto\ParamsTo;
 use Statistics\Enum\StatsEnum;

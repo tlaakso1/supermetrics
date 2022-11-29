@@ -41,7 +41,12 @@ class AveragePostCountByUser extends AbstractCalculator
      */
     protected function doCalculate(): StatisticsTo
     {
-        $value = $this->postCount / count($this->userIds);
+        if (count($this->userIds) > 0) {
+            $value = $this->postCount / count($this->userIds);
+        } else {
+            $value = 0;
+        }
+
 
         return (new StatisticsTo())->setValue(round($value,2));
     }
